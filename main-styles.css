@@ -50,7 +50,7 @@ body, html {
 }
 
 .new-chat button:hover {
-    background-color: #4CAF50;
+    background-color: black;
     color: white;
 }
 
@@ -103,7 +103,7 @@ body, html {
     margin-bottom: 10px; /* Same margin as the input elements */
     padding: 12px;
     font-size: 15px;
-    border: 1px solid red;
+    border: 1px solid black;
     border-radius: 5px;
     outline: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -114,7 +114,7 @@ body, html {
 }
 
 .search-bar button:hover {
-    background-color: #45a049;
+    background-color: black;
     color: white;
 }
 
@@ -131,7 +131,7 @@ body, html {
 }
 
 .functions button:hover {
-    background-color: #4CAF50;
+    background-color: black;
     color: white;
 }
 
