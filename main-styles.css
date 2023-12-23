@@ -25,6 +25,10 @@ body, html {
     border: 1px solid #ccc;
 }
 
+.user-profile {
+    margin-bottom: 20px;
+}
+
 .user-profile img {
     width: 120px;
     height: 120px;
@@ -32,32 +36,22 @@ body, html {
     border-radius: 5px;
 }
 
-.user-profile button {
-    width: 100%;
-    height: 30px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    font-size: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    background-color: #4CAF50; /* Add your preferred background color */
-    color: #fff; /* Add your preferred text color */
-}
-
 .new-chat button {
     width: 100%;
-    height: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 5px;
+    background-color: white;
     outline: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+}
+
+.new-chat button:hover {
+    background-color: #4CAF50;
+    color: white;
 }
 
 .bot {
@@ -109,11 +103,49 @@ body, html {
     margin-bottom: 10px; /* Same margin as the input elements */
     padding: 12px;
     font-size: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid red;
     border-radius: 5px;
     outline: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    background-color: #4CAF50; /* Add your preferred background color */
-    color: #fff; /* Add your preferred text color */
+    background-color: white; /* Add your preferred background color */
+    font-weight: bolder;
+    color: black; /* Add your preferred text color */
 }
+
+.search-bar button:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+.functions button {
+
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.functions button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.settingBtn {
+    margin-top: 10px;
+}
+
+.logoutBtn {
+    margin-top: 25px;
+}
+
+.billing-functions {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+    
