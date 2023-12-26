@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docx-Perfector | Profile</title>
+    <link rel="stylesheet" href="profile-style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!--THE SIDEBAR-->
+        <div class="column1">
+
+            <a href="main.html">
+                <img src="photos/left-chevron-icon.png" alt="">
+            </a>
+
+
+            <div class="billing-functions">
+                <h4>My Billing</h4>
+            </div>
+        
+            <hr class="solid">
+
+            <div class="functions">
+                <button class="settingBtn"><h4>Settings</h4></button>
+                <button class="logoutBtn"><h4>Logout</h4></button>
+            </div>
+        </div>
+
+        <div class="column2">
+            <div class="user-profile">
+                <dl>
+                    <dt>Username</dt>
+                    <dd id="usernameField">rmit@gmail.com</dd>
+            
+                    <dt>Password</dt>
+                    <dd id="passwordField">*********</dd>
+                </dl>
+
+
+                <button class="editBtn" onclick="editProfile()">Edit</button>
+                <button class="saveBtn" onclick="saveProfile()" style="display: none;">Save</button>
+                <button class="cancelBtn" onclick="cancelEdit()" style="display: none;">Cancel</button>
+            </div>
+
+            <div class="user-image">
+                <div class="image-overlay">
+                    <label for="fileInput">
+                        <img src="photos/sample-profile.png" alt="">
+                        <div class="overlay-text">Change Image</div>
+                    </label>
+                    <input type="file" id="fileInput" style="display: none;" accept="image/*" onchange="displayImage(this)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="profile-script.js"></script>
+    
+</body>
+</html>
