@@ -54,17 +54,17 @@ body, html {
     color: white;
 }
 
-.bot {
+.bot, .bot-response {
     display: flex;
     align-items: center;
 }
 
-.bot img {
+.bot img, .bot-response img {
     width: 80px;
     height: 60px;
 }
 
-.bot-intro {
+.bot-intro, .bot-response .bot-intro {
     margin: 10px;
 }
 
