@@ -112,7 +112,7 @@
       <label for="">Password</label>
       <input type="password" required>
       
-      <button type="submit">Sign In</button>
+      <button type="button" >Sign In</button>
     </form>
 
     <div class="login-options">
@@ -124,5 +124,16 @@
       <p>Don't have an account? <a href="sign-up.html">Sign Up</a></p>
     </div>
   </div>
+
+  <script>  
+    const signInBtn = document.querySelector(".login-form button");
+  
+    signInBtn.addEventListener("click", signIn);
+  
+    function signIn() {
+      window.location.href = "main.html";
+    }
+  
+  </script>
 </body>
 </html>

@@ -96,7 +96,7 @@
 
       <input type="password" required>
 
-      <button type="submit">Sign Up</button>
+      <button type="button">Sign Up</button>
     </form>
 
     <div class="signin">
@@ -104,5 +104,15 @@
     </div>
 
   </div>
+
+  <script>
+
+    const signupForm = document.querySelector('.signup-form button');
+
+    signupForm.addEventListener('click', () => {
+      window.location.href = "main.html";
+    });
+    
+  </script>
 </body>
 </html>
