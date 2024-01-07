@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docx-Perfector | Admin</title>
+    <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="row1">
+
+            <h1>Admin</h2>
+
+                <input type="text" id="search-username" placeholder="Search username...">
+                <select id="user-filter">
+                    <option value="all">All Users</option>
+                    <option value="active">Paid</option>
+                    <option value="inactive">Not Paid</option>
+                </select>
+
+                <button class="logoutBtn" onclick="logout()">Log out</button>
+
+            
+        </div>
+
+        <div class="row2">
+
+            <div class="user-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Password</th>
+                            <th>Billing</th>
+                            <th>Expire Date</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="user-1">
+                            <td>rmit123</td>
+                            <td>*******</td>
+                            <td>Paid</td>
+                            <td>02/01/2024</td>
+                            <td><button class="deleteBtn">Delete</button></td>
+                        </tr>
+                        <tr id="user-2">
+                            <td>andtr</td>
+                            <td>*******</td>
+                            <td>Not Paid</td>
+                            <td>12/01/2024</td>
+                            <td><button class="deleteBtn">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            
+
+        </div>
+
+    </div>
+</body>
+</html>

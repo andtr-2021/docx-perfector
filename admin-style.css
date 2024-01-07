@@ -1,0 +1,105 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.container {
+    padding: 20px;
+}
+
+.row1 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.row1 h1 {
+    margin-right: 300px; /* Gap after the title */
+}
+
+.row1 input[type="text"] {
+    margin-right: 10px; /* Gap after the search field */
+}
+
+#search-username {
+    width: 400px;
+    height: 40px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#user-filter {
+    height: 50px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 350px;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #000;
+    padding-top: 10px;
+}
+
+
+.user-info {
+    display: flex;
+    gap: 20px;
+}
+
+
+.logoutBtn {
+    margin-top: 20px;
+    width: 100px;
+    height: 60px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.user-table {
+    width: 100%; /* Table width */
+    margin-top: 20px; /* Space above the table */
+}
+
+.user-table table {
+    width: 100%; /* Table width */
+    border-collapse: collapse; /* Removes the space between borders */
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #ccc; /* Border around table cells */
+    padding: 10px; /* Padding within table cells */
+    text-align: left; /* Aligns text to the left of cells */
+}
+
+.user-table th {
+    background-color: #f4f4f4; /* Header background color */
+}
+
+.deleteBtn {
+    color: red;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
