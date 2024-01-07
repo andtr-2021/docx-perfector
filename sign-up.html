@@ -106,13 +106,46 @@
   </div>
 
   <script>
-
+    
     const signupForm = document.querySelector('.signup-form button');
 
     signupForm.addEventListener('click', () => {
+
+      const firstName = document.querySelector('.signup-form input[type="text"]').value;
+
+      if (!firstName.match(/^[a-zA-Z]+$/)) {
+        alert('Invalid First Name. Text Only. Reload and try again');
+        return;
+      }
+
+      const lastName = document.querySelector('.signup-form input[type="text"]').value;
+
+      if (!lastName.match(/^[a-zA-Z]+$/)) {
+        alert('Invalid First Name. Text Only. Reload and try again');
+        return;
+      }
+
+      const password = document.querySelector('.signup-form input[type="password"]').value;
+
+      if (password.length < 8) {
+        alert('Password must be more than 8 characters. Reload and try again');
+        return;
+      }
+
+      if (!password.match(/[0-9]/g)) {
+        alert('Password must contain a number. Reload and try again');
+        return;
+      }
+
+      if (!password.match(/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/g)) {
+        alert('Password must contain a special character. Reload and try again');
+        return;
+      }
+      
+  
       window.location.href = "main.html";
     });
-    
+
   </script>
 </body>
 </html>

@@ -74,29 +74,22 @@ body, html {
     margin-left: 90px;
 }
 
-.search-bar input[type=text] {
-    width: 80%;
-    height: 30px;
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
 .search-bar input[type=file] {
     width: 60%;
     margin-bottom: 10px;
     padding: 10px;
     font-size: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 5px;
     outline: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-}    
+}  
+
+.search-bar input[type=file]:hover {
+    background-color: #ccc;
+}
 
 .search-bar button {
     width: 19%; /* Adjust the width as needed */
