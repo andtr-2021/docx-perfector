@@ -67,36 +67,37 @@
       height: 50px;
     }
 
-    .login-options {
-      margin-top: 20px;
+    .signup-options {
+      text-align: center;
+      padding-top: 20px;
     }
 
-    .login-options button  {
-      width: 40%;
+    .signup-options p {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .signup-options button  {
+      width: 60%;
       height: 50px;
       font-size: 15px;
       font-weight: bold;
-      border: 1px solid #ccc;
+      border: 1px solid blaack;
       border-radius: 5px;
       font-family: monospace;
       outline: none;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       cursor: pointer;
       background-color: white; /* Add your preferred background color */
-      color: black; /* Add your preferred text color */
+      color: red; /* Add your preferred text color */
       margin: 15px;
       padding-left: 10px;
       padding-right: 10px;
     }
 
-    .login-options button:hover {
+    .signup-options button:hover {
       background-color: black;
       color: white;
-    }
-
-    .sign-up {
-      text-align: center;
-      margin-top: 20px;
     }
   </style>
 </head>
@@ -115,14 +116,11 @@
       <button type="button" >Sign In</button>
     </form>
 
-    <div class="login-options">
-      <button class="loginWGoogle" onclick="loginWithGoogle()">Google</button>
-      <button onclick="forgotPassword()">Forgot?</button>
+    <div class="signup-options">
+      <p>Don't have an account? Sign up now!<p>
+      <button class="loginWGoogle" onclick="loginWithGoogle()"> Sign Up with Google</button>
     </div>
 
-    <div class="sign-up">
-      <p>Don't have an account? <a href="sign-up.html">Sign Up</a></p>
-    </div>
   </div>
 
   <script>  

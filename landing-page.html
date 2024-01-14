@@ -154,7 +154,6 @@
 
         <div class="user-register">
             <button class="signInBtN"><h4>Sign In</h4></button>
-            <button class="signUpBtn"><h4>Sign Up</h4></button>
         </div>
     </div>
 
@@ -187,7 +186,7 @@
 
                 <p>Sign up now to experience my features!</p>
 
-                <button class="signUpNowBtn"><h4>Sign Up Now</h4></button>
+            <button class="signUpNowBtn"><h4>Sign Up With Google Now</h4></button>
 
             </div>
         </div>
@@ -202,18 +201,14 @@
 
         const signUpBtn = document.querySelector('.signUpBtn');
         const signInBtN = document.querySelector('.signInBtN');
-        const signUpNowBtn = document.querySelector('.signUpNowBtn');
-
-        signUpBtn.addEventListener('click', () => {
-            window.location.href = 'sign-up.html';
-        });
+        const signUpNowBtn = document.querySelector('.signUpNowBtn');;
 
         signInBtN.addEventListener('click', () => {
             window.location.href = 'sign-in.html';
         });
 
         signUpNowBtn.addEventListener('click', () => {
-            window.location.href = 'sign-up.html';
+            window.location.href = 'sign-in.html';
         });
 
     </script>
